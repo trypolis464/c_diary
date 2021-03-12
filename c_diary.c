@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 	char text[1000];
 	printf("Enter text.");
 	scanf("%s", &text);
+	strcat(text, "\r\n");
 	fprintf(file, text);
 	fclose(file);
 	return 0;
